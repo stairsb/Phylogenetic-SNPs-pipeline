@@ -21,7 +21,7 @@ bcftools call --ploidy 1 -c pathto_paired_sorted.vcf -o isolate_paired_sorted.bc
 bcftools view pathto/vsfutils.pl varFilter -D 200 > outfile_SNPoutput
 ```
 ## Merging SNPs
-Merge all of the SNPs into a single file:
+The following script can be found in the GWAS scripts repository. Merge all of the SNPs into a single file:
 ```
 MergeSNPs.py SNPoutput.fasta > SNP.txt
 ```
