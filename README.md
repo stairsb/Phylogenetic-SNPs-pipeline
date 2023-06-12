@@ -18,7 +18,7 @@ Download `vsfutils.pl` found here https://github.com/lh3/samtools/blob/master/bc
 ```
 bcftools mpileup -f pathtoreferencegenome.fasta pathto_sorted.bam -o isolate_paired_sorted.vcf
 bcftools call --ploidy 1 -c pathto_paired_sorted.vcf -o isolate_paired_sorted.bcf
-bcftools view pathto/vsfutils.pl varFilter -D 200 > outfile_SNPoutput
+bcftools view isolate_paired_sorted.bcf | pathto/vsfutils.pl varFilter -D 200 > outfile_SNPoutput
 ```
 ## Merging SNPs
 The following script can be found in the GWAS scripts repository. Merge all of the SNPs into a single file:
